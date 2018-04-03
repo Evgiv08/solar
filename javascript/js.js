@@ -2,6 +2,7 @@
   	dots: true,
   	arrows: false
   });
+
 $('.theory-li').on('click', function() {
 	$('.nav > li').css({"background-color":""});
 	$('.theory-li').css({"background-color":"#ffcd00"});
@@ -64,17 +65,10 @@ $("#custom_options li").click(function(){
 });
 
 
-
-
-
-
-
-
-  // document.querySelector('.cuboid').addEventListener( "click" , function() {
-  // 	console.log('Спасибо!')});
-	// $('#showFirst').addClass('notShow');
-	// $('#talk').addClass('notShow');
-	// $('#notShowFirst').removeClass('notShow');
-	// $('#close').removeClass('notShow');
-	// $('#form').removeClass('notShow');
-	// $('#form').addClass('flex');
+$('.menu-header>li:first-child, .menu-header>li:nth-child(2)').hover(
+function(){
+  $('.open-menu').css({'display': 'block'})
+},
+function(){
+  $('.open-menu').css({'display': ''})
+});
